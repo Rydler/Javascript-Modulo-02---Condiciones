@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+<body>
+    <h1>Ingresa el Password</h1>
+    <select name="select1" id="select1">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <select name="" id="select2">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <select name="" id="select3">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <button onclick="
+        firstNumber = Number(document.querySelector('#select1').value) * 100
+        secondNumber = Number(document.querySelector('#select2').value) * 10
+        thirdNumber = Number(document.querySelector('#select3').value)
+        result = firstNumber + secondNumber + thirdNumber
+
+        if (result === 911){
+            document.querySelector('p').innerHTML = 'password 1 correcto'
+        }
+        else if (result === 714){
+            document.querySelector('p').innerHTML = 'password 2 correcto'
+        }
+        else {
+            document.querySelector('p').innerHTML = 'password incorrecto'
+        }
+        
+
+    ">Ingresar</button>
+    <p></p>
+    
+</body>
+</html>

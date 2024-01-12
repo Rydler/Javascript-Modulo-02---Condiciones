@@ -1,0 +1,15 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+.card{
+  display: grid;
+  margin: 4px;
+}
+
+.verify{
+  display: grid;
+  justify-content: center;
+}
